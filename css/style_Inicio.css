@@ -1,3 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;  
+}
+
+body::before {
+    content: "";
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/FondoInicio.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: blur(7px); 
+    z-index: -1;  
+}  
+
 #btnInicio, #btnRegistro{
     border: 1px solid;
     border-radius: 50px;
@@ -13,5 +38,5 @@
     background-color: rgb(110, 18, 18);
 }
 .custom-navbar {
-    background-color: #00000018 !important;
+    background-color: #ffffff !important;
 }
