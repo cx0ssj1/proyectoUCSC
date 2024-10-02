@@ -5,12 +5,12 @@
     font-weight: 600;
     text-align:center;
     text-decoration: none;
-    color: rgb(110, 18, 18);
+    color: rgb(210, 33, 33);
 }
 #btnRegistro{
-    border-color: rgb(110, 18, 18);
+    border-color: rgb(210, 33, 33);
     color: white;
-    background-color: rgb(110, 18, 18);
+    background-color: rgb(210, 33, 33);
 }
 .custom-navbar {
     background-color: #ffffff !important;
