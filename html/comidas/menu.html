@@ -14,15 +14,18 @@
 </head>
 <body>
     <header>    
-        <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar fixed-top">
             <div class="container-fluid">
+                <!-- Marca o logo -->
                 <a class="navbar-brand ms-5" href="/index.html">
                     <img src="https://img.icons8.com/?size=100&id=FVQ3xoP9VcTG&format=png&color=000000" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
                     CAFETERIA UCSC
                 </a>
+                <!-- Botón menú colapsable en pantallas pequeñas -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Links de navegación -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -35,22 +38,26 @@
                             <a class="nav-link active" aria-current="page" href="/html/comidas/bebidas.html">BEBESTIBLES</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a href="/html/registros/Sesion.html" target="_blank" id="btnInicio" class="nav-link active">Iniciar Sesión</a>
                         </li>
                         <li class="nav-item ms-3">
                             <a href="/html/registros/registrarse.html" target="_blank" id="btnRegistro" class="nav-link active">Registrarse</a>
                         </li>
-                    </ul>
-                    <a href="/html/compras/carrito_compras.html" class="btn" id="btnCarrito">
-                        <img src="https://img.icons8.com/?size=100&id=60952&format=png&color=000000" width="30" height="30" alt="Carrito">
-                    </a>
-                    
+                    </ul>                    
                 </div>
             </div>
         </nav>
+        <!-- Botón del carrito fuera de la navbar, con posición fija -->
+        <a href="/html/compras/carrito_compras.html" class="btn-carrito" id="btnCarrito">
+            <img src="https://img.icons8.com/?size=100&id=2qhaGYWA3JF4&format=png&color=000000" width="45" height="45" alt="Carrito">
+            <span id="contador-carrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                0
+            </span>
+        </a>
     </header>
+    
 
     <div class="container text-center">
         <div class="row">
@@ -65,7 +72,7 @@
                                 <h5 class="card-title">Cazuela de pollo</h5>
                                 <h6 class="card-text"> Precio $5.000</h6>
                                 <p class="card-text"> Todos los armuerzos incluyen jugo, fruta y ensalada <br> <br> </p>
-                                <a href="#" class="btn" onclick="agregarAlCarrito('Cazuela de pollo', 5000)"><img src="https://img.icons8.com/?size=100&id=60952&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
+                                <a class="btn" onclick="agregarAlCarrito('Cazuela de pollo', 5000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
                             </div>
                         </div>
                     </div>
@@ -82,7 +89,7 @@
                                 <h5 class="card-title">Pescado frito con arros</h5>
                                 <h6 class="card-text"> Precio $5.000</h6>
                                 <p class="card-text"> Todos los armuerzos incluyen jugo, fruta y ensalada</p>
-                                <a href="#" class="btn" onclick="agregarAlCarrito('Pezcado frito con arros', 5000)"><img src="https://img.icons8.com/?size=100&id=60952&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
+                                <a class="btn" onclick="agregarAlCarrito('Pezcado frito con arros', 5000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
                             </div>
                         </div>
                     </div>
@@ -99,7 +106,7 @@
                                 <h5 class="card-title">Papas Fritas</h5>
                                 <h6 class="card-text"> Precio $2.000</h6>
                                 <p class="card-text"> NO incluye jugo, fruta y ensalada <br> <br> <br> </p>
-                                <a href="#" class="btn" onclick="agregarAlCarrito('Papas Fritas', 2000)"><img src="https://img.icons8.com/?size=100&id=60952&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
+                                <a class="btn" onclick="agregarAlCarrito('Papas Fritas', 2000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
                             </div>
                         </div>
                     </div>
@@ -121,7 +128,7 @@
                                 <h5 class="card-title">Salchipapas</h5>
                                 <h6 class="card-text"> Precio $2.500</h6>
                                 <p class="card-text"> NO incluye jugo, fruta y ensalada <br> <br> <br> <br></p>
-                                <a href="#" class="btn" onclick="agregarAlCarrito('Salchipapas', 2500)"><img src="https://img.icons8.com/?size=100&id=60952&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
+                                <a class="btn" onclick="agregarAlCarrito('Salchipapas', 2500)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
                             </div>
                         </div>
                     </div>
@@ -138,7 +145,7 @@
                                 <h5 class="card-title">Completos</h5>
                                 <h6 class="card-text"> Precio $3.000</h6>
                                 <p class="card-text"> NO incluye jugo, fruta y ensalada <br> <br> <br> <br></p>
-                                <a href="#" class="btn" onclick="agregarAlCarrito('Completos', 3000)"><img src="https://img.icons8.com/?size=100&id=60952&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
+                                <a class="btn" onclick="agregarAlCarrito('Completos', 3000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
                             </div>
                         </div>
                     </div>
@@ -155,7 +162,7 @@
                                 <h5 class="card-title">Troso de Pizza</h5>
                                 <h6 class="card-text"> Precio $2.000</h6>
                                 <p class="card-text"> NO incluye jugo, fruta y ensalada <br> <br> <br> <br></p>
-                                <a href="#" class="btn" onclick="agregarAlCarrito('Troso de Pizza', 2000)"><img src="https://img.icons8.com/?size=100&id=60952&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
+                                <a class="btn" onclick="agregarAlCarrito('Troso de Pizza', 2000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
                             </div>
                         </div>
                     </div>

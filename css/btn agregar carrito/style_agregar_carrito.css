@@ -2,7 +2,30 @@
     border-radius: 16px;
 }
 .btn:hover{
-    background-color: #B22222;
-    border-color: #B22222;
+    background-color: #22b25e;
+    border-color: #22b25e;
     color: white;
+}
+.btn-carrito{
+    margin-left: 30px;
+    margin-right: 70px;
+    z-index: 1050; /* Valor más alto que el de la navbar */
+    position: fixed;
+    top: 15px; /* Ajusta la posición */
+    right: 15px;
+}
+
+#contador-carrito {
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: red; /* Color de fondo del badge */
+    color: white; /* Color del texto */
+    position: absolute;
+    top: -5px;
+    right: -5px;
 }
