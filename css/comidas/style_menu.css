@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;  
+}
+
+body::before {
+    content: "";
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/fondo\ comidas.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px); 
+    z-index: -1;  
+}  
+
+h6{
+    background-color: rgb(247, 222, 189);
+    border-radius: 16px;
+}
+h6:hover{
+    color: rgb(255, 0, 0);
+}
+.container{
+    padding-top: 80px;
+}
+.card-body2{
+    background-color: #E6E6FA;
+    font-family: "Source Code Pro", monospace;
+    font-size: 12px;
+    color: #333333;
+}
+.card-body2:hover{
+    box-shadow: 0px 0px 10px 10px rgb(247, 222, 189);
+}
+
+/* Ajuste general para las tarjetas */
+.card {
+    min-height: 100%; /* Se asegura de que todas las tarjetas ocupen al menos la altura del contenido más largo */
+}
+
+.card-body2 {
+    background-color: #E6E6FA;
+    font-family: "Source Code Pro", monospace;
+    font-size: 12px;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye contenido uniformemente */
+    height: 100%; /* Hace que el contenido llene la tarjeta */
+}
+
+.card-body2:hover {
+    box-shadow: 0px 0px 10px 10px rgb(247, 222, 189);
+}
+
+.card-body .btn {
+    margin-top: auto; /* Alinea el botón en la parte inferior */
+}
+
+/* Ajustes para las imágenes dentro de las tarjetas */
+.img-cm {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que las imágenes mantengan sus proporciones */
+}
+
+/* Estilo de la fila para que las tarjetas tengan igual altura */
+.row {
+    display: flex;
+    align-items: stretch; /* Hace que todas las columnas tengan la misma altura */
+}
+
+h6 {
+    background-color: rgb(247, 222, 189);
+    border-radius: 16px;
+    padding: 5px;
+}
+
+h6:hover {
+    color: rgb(255, 0, 0);
+}
+
