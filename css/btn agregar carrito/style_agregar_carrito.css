@@ -15,17 +15,3 @@
     right: 15px;
 }
 
-#contador-carrito {
-    font-size: 12px;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: red; /* Color de fondo del badge */
-    color: white; /* Color del texto */
-    position: absolute;
-    top: -5px;
-    right: -5px;
-}

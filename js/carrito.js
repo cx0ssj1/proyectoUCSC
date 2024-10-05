@@ -72,6 +72,43 @@ function actualizarContadorCarrito() {
 }
 
 
+let contadorCarrito = 0; // Inicia el contador en 0
+
+// Función para agregar productos al carrito
+function agregarAlCarrito(nombre, precio) {
+    let productoExistente = carrito.find(item => item.nombre === nombre);
+    
+    if (productoExistente) {
+        productoExistente.cantidad++;
+    } else {
+        carrito.push({ nombre: nombre, precio: precio, cantidad: 1 });
+    }
+    
+    // Guardar carrito en localStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    
+    // Incrementa el contador de productos
+    contadorCarrito++;
+    
+    // Actualiza el carrito visual y el contador
+    actualizarCarrito();
+    actualizarContadorCarrito();
+}
+
+// Función para actualizar el contador del carrito
+function actualizarContadorCarrito() {
+    // Actualizar el número en el badge del carrito
+    document.getElementById('contador-carrito').innerText = contadorCarrito;
+}
+
+// Al cargar la página, reiniciar el contador del carrito a 0
+document.addEventListener('DOMContentLoaded', () => {
+    contadorCarrito = 0;  // Reinicia el contador cuando cargue la página
+    actualizarCarrito();
+    actualizarContadorCarrito();  // Refresca el contador
+});
+
+
 // Al cargar la página, actualizar el carrito y el contador
 document.addEventListener('DOMContentLoaded', () => {
     actualizarCarrito();
