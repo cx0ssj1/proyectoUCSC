@@ -142,7 +142,7 @@ body::before {
 }
 
 /* Media query para pantallas más pequeñas, como móviles */
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     .product {
         flex-direction: column; /* Imagen sobre el texto en pantallas pequeñas */
     }
