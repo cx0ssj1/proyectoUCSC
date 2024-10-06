@@ -1,4 +1,6 @@
 #btnInicio{
+    margin: 7px;
+    margin-right: 160px;
     border: 1px solid;
     border-radius: 50px;
     padding: 7px 16px;
@@ -14,5 +16,19 @@
 
 }
 .custom-navbar {
-    background-color: #f7f7f7 !important;
+    background-color: #eaeaea !important;
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.63);
+}
+
+#nav-item-e{
+    border-radius: 11px;
+    transition: .5s;
+    padding: 5px 20px 5px 20px;
+    font-weight: 400;
+}
+
+#nav-item-e:hover{
+    color: white;
+    border-radius: 11px;
+    background-color: rgb(210, 33, 33);
 }

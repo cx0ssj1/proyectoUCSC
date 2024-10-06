@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #F5F5DC;  
+    background-color: #f3f3f3;  
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,27 +16,151 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/img/FondoInicio.jpg');
     background-position: center;
     background-size: cover;
     filter: blur(7px); 
     z-index: -1;  
 }  
 
-#btnInicio, #btnRegistro{
-    border: 1px solid;
-    border-radius: 50px;
-    padding: 7px 16px;
-    font-weight: 600;
-    text-align:center;
-    text-decoration: none;
-    color: rgb(110, 18, 18);
+/*
+.product-1{
+    padding-top: 170px;
 }
-#btnRegistro{
-    border-color: rgb(110, 18, 18);
+
+.product img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+.product{
+    display: flex;
+}
+.product-l, .product-r{
+    max-width: 50%;
+    width: 50%;
+}
+.product-titulo{
+    width: 100%;
+    text-align: center;
     color: white;
-    background-color: rgb(110, 18, 18);
 }
-.custom-navbar {
-    background-color: #ffffff !important;
+
+#btn-index-menu{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.product-boton{
+    border: 1px solid white;
+    border-color: white;
+    border-radius: 16px;
+    max-width: max-content;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    margin: auto;
+    transition: .5s;
+    margin-bottom: 30px;
+}
+
+.product-boton:hover{
+    border-color: rgb(210, 33, 33);
+    background-color: rgb(210, 33, 33);
+}
+
+.container-fluid-content{
+    max-width: 1440px;
+    margin: auto;
+}*/
+
+.product-1 {
+    padding-top: 170px;
+}
+
+.product img {
+    max-width: 100%;
+    object-fit: contain;
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Imagen a la izquierda en pantallas grandes */
+}
+
+.product-l, .product-r {
+    max-width: 50%; /* En pantallas grandes, ocupa el 50% */
+    width: 50%; 
+}
+
+.product-l {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-r {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2ab15e;
+}
+
+.product-titulo {
+    font-size: 62px;
+    color: white;
+}
+
+#btn-index-menu {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.product-boton {
+    border: 1px solid white;
+    border-radius: 16px;
+    max-width: max-content;
+    padding: 5px 20px;
+    text-align: center;
+    margin-top: 20px;
+    transition: .5s;
+    margin-bottom: 30px;
+}
+
+.product-boton:hover {
+    border-color: rgb(210, 33, 33);
+    background-color: rgb(210, 33, 33);
+}
+
+.container-fluid-content{
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* Media query para pantallas más pequeñas, como móviles */
+@media (max-width: 768px) {
+    .product {
+        flex-direction: column; /* Imagen sobre el texto en pantallas pequeñas */
+    }
+
+    .product-l, .product-r {
+        max-width: 100%; /* Ambos elementos ocupan el 100% del ancho */
+        width: 100%;
+    }
+
+    .product-1 {
+        padding-top: 70px; /* Reduce el padding superior para móviles */
+    }
+
+    .product-titulo {
+        font-size: 40px; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    #btn-index-menu {
+        font-size: 24px; /* Ajusta el tamaño del botón en pantallas pequeñas */
+    }
 }
