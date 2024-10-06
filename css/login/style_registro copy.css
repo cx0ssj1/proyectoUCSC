@@ -168,3 +168,45 @@
 .iniciar-registrarse p a:hover{ 
     text-decoration: underline;
 }
+
+
+.wrapper-1 {
+    position: fixed;  /* Fijado en toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    z-index: 1050;  /* Más alto que el menú */
+    opacity: 0;  /* Inicialmente invisible */
+    visibility: hidden;  /* Oculto inicialmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease, visibility 0s linear 0.4s;  /* Animación suave */
+}
+
+.wrapper-1.active-pop {
+    opacity: 1;  /* Visible cuando está activo */
+    visibility: visible;  /* Mostrar el contenido */
+    transition: opacity 0.4s ease, visibility 0s;  /* Animación inversa */
+}
+
+.icon-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 1100;  /* Asegúrate de que el botón cierre esté siempre visible */
+}
+
+.custom-navbar {
+    z-index: 1000;  /* Menú tiene un z-index inferior */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

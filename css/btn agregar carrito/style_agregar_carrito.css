@@ -9,7 +9,7 @@
 .btn-carrito{
     margin-left: 30px;
     margin-right: 70px;
-    z-index: 1050; /* Valor más alto que el de la navbar */
+    z-index: 1000; /* Valor más alto que el de la navbar */
     position: fixed;
     top: 15px; /* Ajusta la posición */
     right: 15px;
