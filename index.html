@@ -36,16 +36,91 @@
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="/html/registros/Sesion.html" target="_blank" id="btnInicio" class="nav-link active">Iniciar Sesión</a>
-                        </li>
-                        <li class="nav-item ms-3">
-                            <a href="/html/registros/registrarse.html" target="_blank" id="btnRegistro" class="nav-link active">Registrarse</a>
-                        </li>
+                            <a href="#" id="btnInicio" class="nav-link active btnLogin-pop">Iniciar Sesión</a>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <div class="wrapper-1 d-flex justify-content-center align-items-center vh-90" style="padding-top: 170px;">
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </span>
+            <div class="container-fluid form-box inicio">
+                <form class="form">
+                    <h2 class="form-title">Bienvenid@ <br> Inicia Sesión</h2>
+                    <div class="input-container">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-container">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Contraseña</label>
+                    </div>
+                    <div class="recordar-pass">
+                        <label><input type="checkbox"> Recordar contraseña</label>
+                        <a href="#">Olvido contraseña?</a>
+                    </div>
+                    <button type="submit" class="btnIniciar">Iniciar Sesión</button>
+                    <div class="iniciar-registrarse">
+                        <p>No tienes cuenta? <a href="#" class="registrarse-link"> Registrate</a></p>
+                    </div>
+                </form>
+            </div>    
+
+            <div class="container-fluid form-box registrarse">
+                <form class="form">
+                    <h2 class="form-title">Registrarse</h2>
+                    <div class="input-container">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label>Nombre y Apellido</label>
+                    </div>
+                    <div class="input-container">
+                        <span class="icon">
+                            <ion-icon name="id-card-outline"></ion-icon>                        </span>
+                        <input type="number" required>
+                        <label>Rut</label>
+                    </div>
+                    <div class="input-container">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-container">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Contraseña</label>
+                    </div>
+                    <div class="recordar-pass">
+                        <label><input type="checkbox"> Marca si es docente o Autoridad de la institucion</label>
+                    </div>
+                    <button type="submit" class="btnIniciar">Iniciar Sesión</button>
+                    <div class="iniciar-registrarse">
+                        <p>Ya tienes cuenta? <a href="#" class="iniciar-link"> Iniciar Sesión</a></p>
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </div>
+
+    
+    <script src="/js/registro.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
