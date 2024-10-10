@@ -13,6 +13,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body> 
+    
+    <header>    
+        <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5" href="index.html">
+                    <img src="https://img.icons8.com/?size=100&id=FVQ3xoP9VcTG&format=png&color=000000" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+                    CAFETERIA UCSC
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active m-2" aria-current="page" href="html/comidas/menu.html" id="nav-item-e">MENU DE HOY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active m-2" aria-current="page" href="html/comidas/snacks.html" id="nav-item-e">SNACKS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active m-2" aria-current="page" href="html/comidas/bebidas.html" id="nav-item-e">BEBESTIBLES</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" id="btnInicio" class="nav-link active btnLogin-pop">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="wrapper-1 d-flex justify-content-center align-items-center vh-90">
         <div class="wrapper">
             <span class="icon-close">
@@ -87,105 +119,54 @@
             </div>    
         </div>
     </div>
-    <header>    
-        <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand ms-5" href="index.html">
-                    <img src="https://img.icons8.com/?size=100&id=FVQ3xoP9VcTG&format=png&color=000000" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
-                    CAFETERIA UCSC
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active m-2" aria-current="page" href="html/comidas/menu.html" id="nav-item-e">MENU DE HOY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active m-2" aria-current="page" href="html/comidas/snacks.html" id="nav-item-e">SNACKS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active m-2" aria-current="page" href="html/comidas/bebidas.html" id="nav-item-e">BEBESTIBLES</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a href="#" id="btnInicio" class="nav-link active btnLogin-pop">Iniciar Sesión</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-<section>
-    <div class="container-fluid-content product-1" >
-        <div class="product-container" >
-            <div class="product row flex-column-reverse flex-md-row"  style="background: #89fce9;">
-                
-                <div class="product-r col-md-6 d-flex flex-column justify-content-center" id="bg-style-menu">
-                    <div class="product-titulo" >
-                        <h1>
-                            COMER BIEN ES DISFRUTAR MAS
-                        </h1>
+    <div class="container-fluid-content" style="padding-top: 150px;">    
+        <section class="container-fluid section-1 borders-styles">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <img width="100%" height="315" src="/img/index/Designer.jpeg"></img>
+                    </div>
+                    <div class="col-md-6 p-3 text-center">
+                        <h1 class="display-2">COMER BIEN ES DISFRUTAR MAS</h1>
                         <p style="font-size: 20px;">VEN A DISFRUTAR DE NUESTROS EXQUISITOS ALMUERZOS</p>
+                        <a class="product-boton ms-4" href="/html/comidas/menu.html" id="btn-index-menu" >Ver menu de hoy</a>
                     </div>
-                    <div class="product-descripcion"></div>
-                    <div class="product-boton">
-                        <a href="html/comidas/menu.html" id="btn-index-menu">Ver menu de hoy</a>
-                    </div>
-                </div>
-                <div class="product-l col-md-6">
-                    <img srcset="img/index/Designer.jpeg" class="img-fluid" width="750" height="1076">
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-</section>
-<section>
-    <div class="container-fluid-content product-2">
-        <div class="product-container">
-            <div class="product row flex-column-reverse flex-md-row" style="background: #DFFFE0;">
-                
-                <div class="product-r col-md-6 d-flex flex-column justify-content-center" id="bg-style-snacks">
-                    <div class="product-titulo">
-                        <h1>
-                            ¡¡ELIJE TU SNACK FAVORITO ANTES DE LA SIGUIENTE CLASE!!
-                        </h1>
-                        <P style="font-size: 20px;"> LOS SNACKS SALVAN ANTES DE CLASES</P>
+    <div class="container-fluid-content pt-5">
+        <section class="container-fluid section-2 borders-styles">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <img width="100%" height="315" src="img/index/snacksss.jpg"></img>
                     </div>
-                    <div class="product-descripcion"></div>
-                    <div class="product-boton">
-                        <a href="html/comidas/snacks.html" id="btn-index-menu">Quiero comer un snack!!!</a>
+                    <div class="col-md-6 p-3 text-center">
+                        <h1 class="display-2" style="font-size: 55px;">EL SNACK PERFECTO PARA SEGUIR CON ENERGIA</h1>
+                        <p style="font-size: 20px;">SABOREA LA PAUSA CON NUESTROS SNACKS</p>
+                        <a class="product-boton ms-4" href="/html/comidas/snacks.html" id="btn-index-menu" >Ir a snakcs</a>
                     </div>
-                </div>
-                <div class="product-l col-md-6">
-                    <img srcset="img/index/dddd.png" class="img-fluid" width="750" height="1076">
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-</section>
-    
-<!-- 
-<div class="container-fluid-content product-1">
-        <div class="product-container">
-            <div class="product" style="background-color: #2ab15e;">
-                <div class="product-l">
-                    <img srcset="/img/index/menu.jpg" class="img-fluid" width="750" height="1076">
-                </div>
-                <div class="product-r">
-                    <div class="product-titulo" style="font-size: 62px; margin-top: 50px;">
-                        Ven y disfruta de nuestros exquisitos almuerzos de hoy
+    <div class="container-fluid-content pt-5">
+        <section class="container-fluid section-3 borders-styles">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <img width="100%" height="315" src="img/index/bebidas.jpg"></img>
                     </div>
-                    <div class="product-descripcion"></div>
-                    <div class="product-boton" style="margin-top: 90px;"><a href="/html/comidas/menu.html" id="btn-index-menu">Ver menu de hoy</a></div>
+                    <div class="col-md-6 p-3 text-center">
+                        <h1 class="display-2" style="font-size: 55px;">HIDRATACIÓN Y SABOR EN CADA SORBO</h1>
+                        <p style="font-size: 20px;">TU PAUSA, TU BEBIDA, TU MOMENTO</p>
+                        <a class="product-boton ms-4" href="/html/comidas/bebidas.html" id="btn-index-menu" >Ir a bebidas</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div> -->
-
+        </section>
+    </div>
     <script src="js/registro copy.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
