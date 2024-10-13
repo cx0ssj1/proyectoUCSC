@@ -23,70 +23,67 @@ body::before {
     z-index: -1;  
 }  
 
-h6{
-    background-color: rgb(247, 222, 189);
-    border-radius: 16px;
-}
-h6:hover{
-    color: rgb(255, 0, 0);
-}
 .container{
-    padding-top: 130px;
-}
-.card-body2{
-    background-color: #E6E6FA;
-    font-family: "Source Code Pro", monospace;
-    font-size: 12px;
-    color: #333333;
-}
-.card-body2:hover{
-    box-shadow: 0px 0px 10px 10px rgb(247, 222, 189);
+    padding-top: 150px;
 }
 
-/* Ajuste general para las tarjetas */
 .card {
-    min-height: 100%; /* Se asegura de que todas las tarjetas ocupen al menos la altura del contenido más largo */
+    width: 190px;
+    height: 455px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.card-img {
+    height: 50%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
 }
 
-.card-body2 {
-    background-color: #E6E6FA;
-    font-family: "Source Code Pro", monospace;
-    font-size: 12px;
-    color: #333333;
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card-footer {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribuye contenido uniformemente */
-    height: 100%; /* Hace que el contenido llene la tarjeta */
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
 }
 
-.card-body2:hover {
-    box-shadow: 0px 0px 10px 10px rgb(247, 222, 189);
+/*Text*/
+.text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
-.card-body .btn {
-    margin-top: auto; /* Alinea el botón en la parte inferior */
+.text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
 }
 
-/* Ajustes para las imágenes dentro de las tarjetas */
-.img-cm {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; /* Asegura que las imágenes mantengan sus proporciones */
-}
-
-/* Estilo de la fila para que las tarjetas tengan igual altura */
-.row {
+/*Button*/
+.card-button {
+    border: 1px solid #252525;
     display: flex;
-    align-items: stretch; /* Hace que todas las columnas tengan la misma altura */
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
 }
 
-h6 {
-    background-color: rgb(247, 222, 189);
-    border-radius: 16px;
-    padding: 5px;
+/*Hover*/
+.card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
 }
 
-h6:hover {
-    color: rgb(255, 0, 0);
+.card-button:hover {
+    border: 1px solid #ffcaa6;
+    background-color: #ffcaa6;
 }
-
