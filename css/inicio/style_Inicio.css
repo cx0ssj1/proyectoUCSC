@@ -1,6 +1,3 @@
-
-
-
 #btn-index-menu {
     font-size: 30px;
     color: rgb(0, 0, 0);
@@ -47,7 +44,7 @@
     margin: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
 
     .borders-styles img{
         border-radius: 20px;
