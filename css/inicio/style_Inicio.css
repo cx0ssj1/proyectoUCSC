@@ -1,63 +1,36 @@
-#btn-index-menu {
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+body {
+    background-image: url('/img/index/Inicio.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Esto hace que la imagen se quede fija cuando haces scroll */
 }
 
-.product-boton {
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 60px;
-    padding: 5px 20px;
-    transition: .5s;
-}
-.product-boton:hover {
-    border-color: rgb(255, 255, 255);
-    background-color: rgb(255, 255, 255);
-}
-.section-1{
-    background-color: #89fce9;
-}
-.section-2{
-    background: #DFFFE0;
-}
-.section-3{
-    background: #dbcdf1;
-}
-.borders-styles img{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 90px;
-}
-.borders-styles{
-    box-shadow: 0px 0px 69px 3px rgba(0,0,0,0.33);
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 90px;
-    border-bottom-left-radius: 90px;
-}
-.container-fluid {
-    padding: 0; 
-    margin: 0;
-}
-
-/* styles.css */
 .card {
-    border-radius: 15px;
+    border-radius: 30px;
     overflow: hidden;
     height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgba(255, 255, 255, 0);
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    box-shadow: none;
+    border: none;
 }
 
-.bg-blur {
-    background-size: 100%;
+.img-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-size: cover;
     background-position: center;
-    filter: blur(8px);
-    position: relative;
+    filter: blur(10px);
+    z-index: 0;
 }
 
 .card-body {
@@ -66,35 +39,66 @@
 }
 
 .card-title {
-    font-size: 24px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.353);
 }
 
 .card-text {
-    font-size: 18px;
-    color: #ffcc99;
+    color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
+#bebidas-h, #comer-h, #snacks-h{
+    font-family:'Futura Std Condensed';
+    font-size: 40px;
+    font-weight:bold;
+}
+#bebidas-p, #comer-p, #snacks-p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: bold;
+}
 
+#hrefs{
+    border: 2px solid white;
+    border-radius: 16px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 20px;
+    padding: 7px 26px;
+    transition: .5s;
+}
+#hrefs:hover{
+    border: rgb(255, 71, 71);
+    background-color: rgb(255, 71, 71);
+}
 
-/*
-@media (max-width: 992px) {
-    
-    .borders-styles img{
-        border-radius: 20px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
-    .borders-styles{
-        border-radius: 20px;
-    }
-    .container-fluid-content{
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    #btn-index-menu {
-        font-size: 24px;
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.contents{
+    padding-top: 160px;
+}
+@media (max-width: 1200px){
+    #bebidas-h{
+        font-size: 30px;
     }
 }
-*/
+@media (max-width: 992px) {
+    #bebidas-h, #comer-h, #snacks-h{
+        font-size: 35px;
+    }
+    #bebidas-p, #comer-p, #snacks-p{
+        font-size: 25px;
+    }
+    .contents{
+        padding-top: 90px;
+    }
+}
+
+footer{
+    color: #ebebeb;
+    background-color: #ebebeb;
+}
+
