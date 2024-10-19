@@ -1,39 +1,45 @@
-body::before {
-    content: "";
-    position: fixed;  
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/img/fondos/fondoMenu.jpg');
-    background-position: center;
+body {
+    background-image: url('/img/index/Inicio.png');
     background-size: cover;
-    filter: blur(10px); 
-    z-index: -1;  
-}  
-
-#img-cm{
-    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Esto hace que la imagen se quede fija cuando haces scroll */
 }
 
-h6{
-    background-color: rgb(247, 222, 189);
-    border-radius: 16px;
-}
-h6:hover{
-    color: rgb(255, 0, 0);
-}
-.card-body2{
-    width: 400px;
-    background-color: #E6E6FA;
-    font-family: "Source Code Pro", monospace;
-    font-size: 12px;
-    color: #333333;
-}
-.card-body2:hover{
-    box-shadow: 0px 0px 10px 10px rgb(247, 222, 189);
+.card {
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-.card-body2:hover {
-    box-shadow: 0px 0px 10px 10px rgb(247, 222, 189);
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.contents{
+    padding-top: 150px;
+}
+
+@media (max-width: 992px) {
+    .contents{
+        padding-top: 90px;
+    }
 }
