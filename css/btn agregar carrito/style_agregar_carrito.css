@@ -1,6 +1,7 @@
 .btn{
-    border: 2px solid white;
+    color: #000000;
     border-radius: 16px;
+    background-color: rgb(240, 227, 252);
 }
 .btn:hover{
     background-color: #22b25e;

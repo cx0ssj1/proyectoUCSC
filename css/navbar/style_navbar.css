@@ -16,15 +16,19 @@
     background-color: rgb(255, 71, 71);
 
 }
-
+.btn-carrito{
+    margin: 100px;
+}
 .navbar-brand{
     border-radius: 16px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 20px;
-    padding: 3px 26px;
+    padding: 1px 15px;
     background-color: rgb(255, 71, 71);
 }
 .navbar-brand, .nav-link{
+    font-family: cursive;
+    font-weight: 800;
     color: #ffffff !important;
 }
 
@@ -33,9 +37,6 @@
     box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.356);
 }
 
-.color-nava{
-    color: #ffffff;
-}
 
 #nav-item-e{
     border-radius: 11px;

@@ -99,7 +99,7 @@
                 </a>
                 <!-- Botón menú colapsable en pantallas pequeñas -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="https://img.icons8.com/?size=100&id=59832&format=png&color=FFFFFF" width="35px">
+                    <img src="https://img.icons8.com/?size=100&id=59832&format=png&color=FFFFFF" width="20px">
                 </button>
                 <!-- Links de navegación -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -121,15 +121,12 @@
                 </div>
             </div>
         </nav>
-        <!-- Botón del carrito fuera de la navbar, con posición fija -->
-        <a href="/html/compras/carrito_compras.html" class="btn-carrito" id="btnCarrito">
-            <img src="https://img.icons8.com/?size=100&id=2qhaGYWA3JF4&format=png&color=000000" width="45" height="45" alt="Carrito">
-            <span id="contador-carrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger ">
-                0
-            </span>
-        </a>
     </header>
-
+    <div class="carrito-btn">
+        <a href="/html/compras/carrito_compras.html" class="btn-carrito" id="btnCarrito">
+            <img src="https://img.icons8.com/?size=100&id=85180&format=png&color=000000" width="45" height="45">
+        </a>
+    </div>
     <div class="container my-4 contents">
         <div class="row">
             <!-- Tarjeta 1 -->
@@ -140,7 +137,7 @@
                         <h5 class="card-title">Cazuela de pollo</h5>
                         <p class="card-text">Precio $5.000</p>
                         <p>Todos los almuerzos incluyen jugo, fruta y ensalada</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a class="btn" onclick="agregarAlCarrito('Cazuela de pollo', 5000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
                     </div>
                 </div>
             </div>
@@ -153,7 +150,7 @@
                         <h5 class="card-title">Salchipapas</h5>
                         <p class="card-text">Precio $2.500</p>
                         <p>NO incluye jugo, fruta y ensalada</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a class="btn" onclick="agregarAlCarrito('Salchipapas', 2500)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
                     </div>
                 </div>
             </div>
@@ -166,7 +163,7 @@
                         <h5 class="card-title">Trozo de Pizza</h5>
                         <p class="card-text">Precio $2.000</p>
                         <p>NO incluye jugo, fruta y ensalada</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <a class="btn" onclick="agregarAlCarrito('Troso de Pizza', 2000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
                     </div>
                 </div>
             </div>
