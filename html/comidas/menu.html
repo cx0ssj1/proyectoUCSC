@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/login/style_registro copy.css">
     <link rel="stylesheet" href="/css/comidas/style_menu.css">
     <link rel="stylesheet" href="/css/btn agregar carrito/style_agregar_carrito.css">
+    <link rel="stylesheet" href="/css/cards/style_cards.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -127,7 +128,11 @@
             <img src="https://img.icons8.com/?size=100&id=85180&format=png&color=000000" width="45" height="45">
         </a>
     </div>
+
+    <!--contenido-->
     <div class="container my-4 contents">
+
+        <!--Fila 1-->
         <div class="row">
             <!-- Tarjeta 1 -->
             <div class="col-md-4 mb-4">
@@ -168,266 +173,91 @@
                 </div>
             </div>
         </div>
-        
-    </div>
 
-    <!--
-        <div class="container-fluid m-1 text-center">
-            <section class="container-fluid" style="padding-top: 90px;">
-                <div class="row">
-                    <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card mb-3 card-body2"">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/menu/Cazuela de pollo.jpg" id="img-cm"  class="img-fluid img-cm rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Cazuela de pollo</h5>
-                                    <h6 class="card-text"> Precio $5.000</h6>
-                                    <p class="card-text"> Todos los armuerzos incluyen jugo, fruta y ensalada</p>
-                                    <a class="btn" onclick="agregarAlCarrito('Cazuela de pollo', 5000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card mb-3 card-body2">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/menu/Pescado frito con arroz.jpg" id="img-cm" class="img-fluid img-cm rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pescado frito</h5>
-                                    <h6 class="card-text"> Precio $5.000</h6>
-                                    <p class="card-text"> Todos los armuerzos incluyen jugo, fruta y ensalada</p>
-                                    <a class="btn" onclick="agregarAlCarrito('Pezcado frito con arros', 5000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card mb-3 card-body2">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/menu/papasfritas.jpg" id="img-cm" class="img-fluid img-cm rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Papas Fritas</h5>
-                                    <h6 class="card-text"> Precio $2.000</h6>
-                                    <p class="card-text"> NO incluye jugo, fruta y ensalada</p>
-                                    <a class="btn" onclick="agregarAlCarrito('Papas Fritas', 2000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="container-fluid pt-3">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card mb-3 card-body2">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/menu/salchipapas.jpeg" id="img-cm" class="img-fluid img-cm rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Salchipapas</h5>
-                                    <h6 class="card-text"> Precio $2.500</h6>
-                                    <p class="card-text"> NO incluye jugo, fruta y ensalada</p>
-                                    <a class="btn" onclick="agregarAlCarrito('Salchipapas', 2500)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card mb-3 card-body2">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/menu/Completos.jpg" id="img-cm" class="img-fluid img-cm rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Completos</h5>
-                                    <h6 class="card-text"> Precio $3.000</h6>
-                                    <p class="card-text"> NO incluye jugo, fruta y ensalada</p>
-                                    <a class="btn" onclick="agregarAlCarrito('Completos', 3000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card mb-3 card-body2">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/menu/pizza.jpg" id="img-cm" class="img-fluid img-cm rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Troso de Pizza</h5>
-                                    <h6 class="card-text"> Precio $2.000</h6>
-                                    <p class="card-text"> NO incluye jugo, fruta y ensalada</p>
-                                    <a class="btn" onclick="agregarAlCarrito('Troso de Pizza', 2000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container-fluid pt-3">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card mb-3 card-body2">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/menu/mechada it.png" id="img-cm" class="img-fluid img-cm rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mechada Italiano</h5>
-                                    <h6 class="card-text"> Precio $3.000</h6>
-                                    <p class="card-text"> NO incluye jugo, fruta y ensalada</p>
-                                    <a class="btn" onclick="agregarAlCarrito('Mechada Italiano', 3000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card mb-3 card-body2">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/menu/burrito.webp" id="img-cm" class="img-fluid img-cm rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Burrito</h5>
-                                    <h6 class="card-text"> Precio $2.300</h6>
-                                    <p class="card-text"> NO incluye jugo, fruta y ensalada</p>
-                                    <a class="btn" onclick="agregarAlCarrito('Burrito', 2300)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card mb-3 card-body2">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/menu/bolw saludable.jpg" id="img-cm" class="img-fluid img-cm rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">bolw</h5>
-                                    <h6 class="card-text"> Precio $3.000</h6>
-                                    <p class="card-text"> NO incluye jugo, fruta y ensalada</p>
-                                    <a class="btn" onclick="agregarAlCarrito('bolw', 3000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>   
-
-    -->
-    
-    
-    
-    
-    
-    
-    
-    <!--
-    <div class="container pdd-1">
+        <!--Fila 2-->
         <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="card mb-3 card-body2" style="width: 400px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="/img/menu/Pescado frito con arroz.jpg" id="img-cm" class="img-fluid img-cm rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Pescado frito con arros</h5>
-                                <h6 class="card-text"> Precio $5.000</h6>
-                                <p class="card-text"> Todos los armuerzos incluyen jugo, fruta y ensalada</p>
-                                <a class="btn" onclick="agregarAlCarrito('Pezcado frito con arros', 5000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
-                            </div>
-                        </div>
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/img/menu/bolw saludable.jpg" class="card-img-top" alt="Cazuela de pollo">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bolw</h5>
+                        <p class="card-text">Precio $2.000</p>
+                        <p>NO incluye jugo, fruta y ensalada</p>
+                        <a class="btn" onclick="agregarAlCarrito('bolw', 2000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="card mb-3 card-body2" style="width: 400px;">
-                    <div class="row g-0">
-                        <div class="col-md-4" >
-                            <img src="/img/menu/papasfritas.jpg" id="img-cm" class="img-fluid img-cm rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Papas Fritas</h5>
-                                <h6 class="card-text"> Precio $2.000</h6>
-                                <p class="card-text"> NO incluye jugo, fruta y ensalada </p>
-                                <a class="btn" onclick="agregarAlCarrito('Papas Fritas', 2000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
-                            </div>
-                        </div>
+    
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/img/menu/Completos.jpg" class="card-img-top" alt="Salchipapas">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Completos</h5>
+                        <p class="card-text">Precio $2.500</p>
+                        <p>NO incluye jugo, fruta y ensalada</p>
+                        <a class="btn" onclick="agregarAlCarrito('Completos', 2500)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="card mb-3 card-body2" style="width: 400px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="/img/menu/Completos.jpg" id="img-cm" class="img-fluid img-cm rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Completos</h5>
-                                <h6 class="card-text"> Precio $3.000</h6>
-                                <p class="card-text"> NO incluye jugo, fruta y ensalada </p>
-                                <a class="btn" onclick="agregarAlCarrito('Completos', 3000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
-                            </div>
-                        </div>
+    
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/img/menu/burrito.webp" class="card-img-top" alt="Trosco de Pizza">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Burrito</h5>
+                        <p class="card-text">Precio $2.000</p>
+                        <p>NO incluye jugo, fruta y ensalada</p>
+                        <a class="btn" onclick="agregarAlCarrito('Burrito', 2000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row pt-4">
-            <div class="col-12 col-md-4">
-                <div class="card mb-3 card-body2" style="width: 400px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="/img/menu/salchipapas.jpeg" id="img-cm" class="img-fluid img-cm rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Salchipapas</h5>
-                                <h6 class="card-text"> Precio $2.500</h6>
-                                <p class="card-text"> NO incluye jugo, fruta y ensalada </p>
-                                <a class="btn" onclick="agregarAlCarrito('Salchipapas', 2500)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
-                            </div>
-                        </div>
+
+        <!--Fila 3-->
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/img/menu/papasfritas.jpg" class="card-img-top" alt="Cazuela de pollo">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Papas Fritas</h5>
+                        <p class="card-text">Precio $2.500</p>
+                        <p>NO incluye jugo, fruta y ensalada</p>
+                        <a class="btn" onclick="agregarAlCarrito('Papas Fritas', 2500)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
                     </div>
                 </div>
             </div>
-        </div>        
-    </div>-->
     
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/img/menu/Pescado frito con arroz.jpg" class="card-img-top" alt="Salchipapas">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pescado Frito</h5>
+                        <p class="card-text">Precio $5.000</p>
+                        <p>Todos los almuerzos incluyen jugo, fruta y ensalada</p>
+                        <a class="btn" onclick="agregarAlCarrito('Pescado Frito', 5000)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
     
-    
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/img/menu/mechada it.png" class="card-img-top" alt="Trosco de Pizza">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mechada Italiano</h5>
+                        <p class="card-text">Precio $2.500</p>
+                        <p>NO incluye jugo, fruta y ensalada</p>
+                        <a class="btn" onclick="agregarAlCarrito('Mechada Italiano', 2500)"><img src="https://img.icons8.com/?size=100&id=64849&format=png&color=000000" width="20" height="20" alt=""> Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
     <script src="/js/registro copy.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

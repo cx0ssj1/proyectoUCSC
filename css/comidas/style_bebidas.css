@@ -1,24 +1,7 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #F5F5DC;  
-    background-attachment: fixed;
+    background-image: url('/img/fondos/FondoBebidas.png');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;  
+    background-attachment: fixed; /* Esto hace que la imagen se quede fija cuando haces scroll */
 }
-
-body::before {
-    content: "";
-    position: fixed;  
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/img/fondos/fondoBebidas.png');
-    background-position: center;
-    background-size: cover;
-    filter: blur(10px); 
-    z-index: -1;  
-}  
