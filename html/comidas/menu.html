@@ -15,81 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper-1 d-flex justify-content-center align-items-center vh-90">
-        <div class="wrapper">
-            <span class="icon-close">
-                <ion-icon name="close-outline"></ion-icon>
-            </span>
-            <div class="container-fluid form-box inicio">
-                <form class="form">
-                    <h2 class="form-title">Bienvenid@ <br> Inicia Sesión</h2>
-                    <div class="input-container">
-                        <span class="icon">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </span>
-                        <input type="email" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-container">
-                        <span class="icon">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
-                        </span>
-                        <input type="password" required>
-                        <label>Contraseña</label>
-                    </div>
-                    <div class="recordar-pass">
-                        <label><input type="checkbox"> Recordar contraseña</label>
-                        <a href="#">Olvido contraseña?</a>
-                    </div>
-                    <button type="submit" class="btnIniciar">Iniciar Sesión</button>
-                    <div class="iniciar-registrarse">
-                        <p>No tienes cuenta? <a href="#" class="registrarse-link"> Registrate</a></p>
-                    </div>
-                </form>
-            </div>    
-
-            <div class="container-fluid form-box registrarse">
-                <form class="form">
-                    <h2 class="form-title">Registrarse</h2>
-                    <div class="input-container">
-                        <span class="icon">
-                            <ion-icon name="person-outline"></ion-icon>
-                        </span>
-                        <input type="text" required>
-                        <label>Nombre y Apellido</label>
-                    </div>
-                    <div class="input-container">
-                        <span class="icon">
-                            <ion-icon name="id-card-outline"></ion-icon>                        </span>
-                        <input type="number" required>
-                        <label>Rut</label>
-                    </div>
-                    <div class="input-container">
-                        <span class="icon">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </span>
-                        <input type="email" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-container">
-                        <span class="icon">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
-                        </span>
-                        <input type="password" required>
-                        <label>Contraseña</label>
-                    </div>
-                    <div class="recordar-pass">
-                        <label><input type="checkbox"> Marca si es docente o Autoridad de la institucion</label>
-                    </div>
-                    <button type="submit" class="btnIniciar">Iniciar Sesión</button>
-                    <div class="iniciar-registrarse">
-                        <p>Ya tienes cuenta? <a href="#" class="iniciar-link"> Iniciar Sesión</a></p>
-                    </div>
-                </form>
-            </div>    
-        </div>
-    </div>
-
     <header>    
         <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar fixed-top">
             <div class="container-fluid">
@@ -117,12 +42,97 @@
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="btn-iniciarss">
                         <li class="nav-item">
-                            <a href="#" id="btnInicio" class="nav-link active btnLogin-pop">Iniciar Sesión</a>
+                            <a href="#" id="btnInicio" class="nav-link active btnLogin-pop" data-bs-toggle="modal" data-bs-target="#modalForm">Iniciar Sesión</a>
+                        </li>
                     </ul>       
                 </div>
             </div>
         </nav>
     </header>
+                
+        <!-- Modal -->
+        <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalFormLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalFormLabel">Bienvenid@</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Formulario de Iniciar Sesión -->
+                        <div id="form-inicio-sesion" class="form-box inicio">
+                            <form class="form">
+                                <h2 class="form-title">Inicia Sesión</h2>
+                                <div class="input-container">
+                                    <span class="icon">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </span>
+                                    <input type="email" required>
+                                    <label>Email</label>
+                                </div>
+                                <div class="input-container">
+                                    <span class="icon">
+                                        <ion-icon name="lock-closed-outline"></ion-icon>
+                                    </span>
+                                    <input type="password" required>
+                                    <label>Contraseña</label>
+                                </div>
+                                <div class="recordar-pass">
+                                    <label><input type="checkbox"> Recordar contraseña</label>
+                                    <a href="#">Olvido contraseña?</a>
+                                </div>
+                                <button type="submit" class="btnIniciar">Iniciar Sesión</button>
+                                <div class="iniciar-registrarse">
+                                    <p>No tienes cuenta? <a href="#" id="link-registrarse" class="registrarse-link"> Registrate</a></p>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <!-- Formulario de Registrarse -->
+                        <div id="form-registrarse" class="form-box registrarse" style="display: none;">
+                            <form class="form">
+                                <h2 class="form-title">Registrarse</h2>
+                                <div class="input-container">
+                                    <span class="icon">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                    </span>
+                                    <input type="text" required>
+                                    <label>Nombre y Apellido</label>
+                                </div>
+                                <div class="input-container">
+                                    <span class="icon">
+                                        <ion-icon name="id-card-outline"></ion-icon>
+                                    </span>
+                                    <input type="number" required>
+                                    <label>Rut</label>
+                                </div>
+                                <div class="input-container">
+                                    <span class="icon">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </span>
+                                    <input type="email" required>
+                                    <label>Email</label>
+                                </div>
+                                <div class="input-container">
+                                    <span class="icon">
+                                        <ion-icon name="lock-closed-outline"></ion-icon>
+                                    </span>
+                                    <input type="password" required>
+                                    <label>Contraseña</label>
+                                </div>
+                                <div class="recordar-pass">
+                                    <label><input type="checkbox"> Marca si es docente o Autoridad de la institucion</label>
+                                </div>
+                                <button type="submit" class="btnIniciar">Registrarse</button>
+                                <div class="iniciar-registrarse">
+                                    <p>Ya tienes cuenta? <a href="#" id="link-iniciar-sesion" class="iniciar-link"> Iniciar Sesión</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <div class="carrito-btn">
         <a href="/html/compras/carrito_compras.html" class="btn-carrito" id="btnCarrito">
             <img src="https://img.icons8.com/?size=100&id=85180&format=png&color=000000" width="45" height="45">

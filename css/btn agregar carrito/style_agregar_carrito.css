@@ -1,11 +1,13 @@
 .btn{
     color: #000000;
     border-radius: 16px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 20px;
     background-color: rgb(240, 227, 252);
 }
 .btn:hover{
-    background-color: #22b25e;
-    border-color: #22b25e;
+    background-color: rgb(255, 71, 71);
+    border-color: rgb(255, 71, 71);
     color: white;
 }
 .btn-carrito{

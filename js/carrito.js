@@ -33,8 +33,7 @@ function actualizarCarrito() {
         <td><input type="number" min="1" value="${producto.cantidad}" class="form-control" onchange="cambiarCantidad(${index}, this.value)"></td>
         <td>$${producto.precio * producto.cantidad}</td>
         <td><button class="btn btn-sm" onclick="eliminarProducto(${index})"><img src="https://img.icons8.com/?size=100&id=11705&format=png&color=000000" width="20px"></button></td>
-        `;
-        
+        `;        
         totalCarrito += producto.precio * producto.cantidad;
     });
     
