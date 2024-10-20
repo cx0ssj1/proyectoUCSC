@@ -30,7 +30,13 @@ function actualizarCarrito() {
         row.innerHTML = `
         <td>${producto.nombre}</td>
         <td>$${producto.precio}</td>
-        <td><input type="number" min="1" value="${producto.cantidad}" class="form-control" onchange="cambiarCantidad(${index}, this.value)"></td>
+        <td>
+        <div class="quantity-container">
+        <button class="quantity-btn" onclick="decrement(${index})">-</button>
+        <input type="text" id="quantity-input-${index}" value="${producto.cantidad}" readonly>
+        <button class="quantity-btn" onclick="increment(${index})">+</button>
+        </div>
+        </td>
         <td>$${producto.precio * producto.cantidad}</td>
         <td><button class="btn btn-sm" onclick="eliminarProducto(${index})"><img src="https://img.icons8.com/?size=100&id=11705&format=png&color=000000" width="20px"></button></td>
         `;        
@@ -39,6 +45,27 @@ function actualizarCarrito() {
     
     document.getElementById('total-carrito').innerText = `$${totalCarrito}`;
 }
+
+function increment(index) {
+    let input = document.getElementById(`quantity-input-${index}`);
+    let currentValue = parseInt(input.value);
+    carrito[index].cantidad = currentValue + 1;
+    input.value = carrito[index].cantidad;
+    actualizarCarrito();  // Actualiza el carrito visualmente
+    localStorage.setItem('carrito', JSON.stringify(carrito)); // Guarda los cambios
+}
+
+function decrement(index) {
+    let input = document.getElementById(`quantity-input-${index}`);
+    let currentValue = parseInt(input.value);
+    if (currentValue > 1) {
+        carrito[index].cantidad = currentValue - 1;
+        input.value = carrito[index].cantidad;
+        actualizarCarrito();  // Actualiza el carrito visualmente
+        localStorage.setItem('carrito', JSON.stringify(carrito)); // Guarda los cambios
+    }
+}
+
 
 // Función para eliminar un producto
 function eliminarProducto(indice) {
