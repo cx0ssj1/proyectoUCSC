@@ -40,3 +40,7 @@ input[id^="quantity-input-"] {
     font-weight: bold;
     margin: 0 5px;
 }
+
+.form-control{
+    border: 2px solid rgb(225, 71, 71);
+}
