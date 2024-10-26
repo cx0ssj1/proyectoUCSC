@@ -44,3 +44,21 @@ input[id^="quantity-input-"] {
 .form-control{
     border: 2px solid rgb(225, 71, 71);
 }
+
+.pagar-href{
+    background-color: rgb(225, 71, 71);
+    border: 2px solid rgb(225, 71, 71);
+    color: white;
+    text-decoration: none;
+    border-radius: 16px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 20px;
+    padding: 7px 26px;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.pagar-href:hover{
+    color: black;
+    background-color: white;
+}

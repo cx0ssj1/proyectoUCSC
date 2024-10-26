@@ -16,9 +16,6 @@
     background-color: rgb(255, 71, 71);
 
 }
-.btn-carrito{
-    margin-top: 100px;
-}
 .navbar-brand{
     border-radius: 16px;
     border-top-right-radius: 30px;
@@ -51,10 +48,4 @@
     border-top-right-radius: 30px;
     border-bottom-left-radius: 20px;
     background-color: rgb(255, 71, 71);
-}
-
-@media (max-width: 992px) {
-    .btn-carrito{
-        padding-right: 210px;
-    }
 }

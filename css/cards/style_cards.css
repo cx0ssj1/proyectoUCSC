@@ -2,7 +2,6 @@
     border-radius: 16px;
     border-top-right-radius: 70px;
     border-bottom-left-radius: 60px;
-    
     overflow: hidden;
 }
 
@@ -28,8 +27,22 @@
     background-color: rgb(240, 227, 252);
 }
 
-.btn {
-    margin-top: 10px;
+.butonn-card {
+    text-decoration: none; 
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+    background-color: rgb(225, 71, 71);
+    border: 2px solid rgb(225, 71, 71);
+    border-radius: 16px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 20px;
+    padding: 5px 20px;
+    transition: .9s;
+}
+.butonn-card:hover{
+    color: black;
+    background-color: #faf8f6;
 }
 
 .contents{
@@ -40,4 +53,35 @@
     .contents{
         padding-top: 90px;
     }
+}
+
+.cssbuttons-io-button {
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgb(192, 58, 58) 0%, rgb(225, 71, 71) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #4c4a4a98;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 20px;
+    transition: .6s;
+}
+
+.cssbuttons-io-button svg {
+    margin-right: 6px;
+}
+
+.cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em rgb(225, 71, 71);
+}
+
+.cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em rgb(225, 71, 71);
 }

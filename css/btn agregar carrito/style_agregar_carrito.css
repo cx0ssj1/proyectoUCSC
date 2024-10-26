@@ -1,21 +1,17 @@
-.btn{
-    color: #000000;
-    border-radius: 16px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 20px;
-    background-color: rgb(240, 227, 252);
-}
-.btn:hover{
-    background-color: rgb(255, 71, 71);
-    border-color: rgb(255, 71, 71);
-    color: white;
-}
-.btn-carrito{
-    margin-left: 30px;
-    margin-right: 70px;
-    z-index: 1000; /* Valor más alto que el de la navbar */
-    position: fixed;
-    top: 15px; /* Ajusta la posición */
-    right: 15px;
-}
 
+.carrito-btn{
+    z-index: 1;
+    top: 150px;
+    position: fixed;
+    padding: 9px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background-color: rgba(223, 223, 223, 0.435);
+    transition: 1s;
+    cursor: pointer;
+    overflow: hidden;
+}
+.carrito-btn:hover {
+    padding-left: 70px;
+    padding-right: 70px;
+}
