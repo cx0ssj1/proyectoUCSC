@@ -1,17 +1,47 @@
-
-.carrito-btn{
+.carrito-btn {
     z-index: 1;
     top: 150px;
     position: fixed;
-    padding: 9px;
+    padding: 5px;
     border-top-right-radius: 13px;
     border-bottom-right-radius: 13px;
-    background-color: rgba(223, 223, 223, 0.435);
-    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.164);
     cursor: pointer;
+    display: flex;
+    align-items: center;
     overflow: hidden;
+    width: 60px; 
+    height: 60px; 
+    transition: width 0.3s ease, padding-top 0.3s ease;
 }
+
 .carrito-btn:hover {
-    padding-left: 70px;
-    padding-right: 70px;
+    width: 160px; /* Ancho ampliado para el texto */
 }
+
+.carrito-btn a {
+    text-decoration: none; /* Elimina la decoración del enlace */
+    color: inherit; /* Hereda el color del contenedor */
+    display: flex;
+    align-items: center;
+}
+
+.carrito-btn img {
+    height: 45px; /* Ajusta la altura de la imagen al tamaño del ícono */
+    transition: margin 0.1s ease;
+}
+
+.carrito-texto {
+    font-size: 19px;
+    margin-left: -50px; /* Inicia oculto detrás del ícono */
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    transition: opacity 0.3s, margin-left 0.4s;
+}
+
+.carrito-btn:hover .carrito-texto {
+    opacity: 1;
+    margin-left: 10px; /* Desliza el texto hacia la derecha desde el ícono */
+}
+
