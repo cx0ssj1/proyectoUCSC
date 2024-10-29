@@ -11,29 +11,29 @@
     align-items: center;
     overflow: hidden;
     width: 60px; 
-    height: 60px; 
+    height: 60px;
     transition: width 0.3s ease, padding-top 0.3s ease;
 }
 
 .carrito-btn:hover {
-    width: 160px; /* Ancho ampliado para el texto */
+    width: 160px;
 }
 
 .carrito-btn a {
-    text-decoration: none; /* Elimina la decoración del enlace */
-    color: inherit; /* Hereda el color del contenedor */
+    text-decoration: none;
+    color: inherit;
     display: flex;
     align-items: center;
 }
 
 .carrito-btn img {
-    height: 45px; /* Ajusta la altura de la imagen al tamaño del ícono */
+    height: 45px;
     transition: margin 0.1s ease;
 }
 
 .carrito-texto {
     font-size: 19px;
-    margin-left: -50px; /* Inicia oculto detrás del ícono */
+    margin-left: -50px;  
     opacity: 0;
     color: rgb(255, 255, 255);
     white-space: nowrap;
@@ -42,6 +42,6 @@
 
 .carrito-btn:hover .carrito-texto {
     opacity: 1;
-    margin-left: 10px; /* Desliza el texto hacia la derecha desde el ícono */
+    margin-left: 10px; 
 }
 

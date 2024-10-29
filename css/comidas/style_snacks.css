@@ -3,5 +3,5 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Esto hace que la imagen se quede fija cuando haces scroll */
+    background-attachment: fixed;
 }
