@@ -17,18 +17,15 @@
 </head>
 <body>
     <header>    
-        <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top custom-navbar">
             <div class="container-fluid">
-                <!-- Marca o logo -->
                 <a class="navbar-brand ms-5" href="/index.html">
                     <img src="https://img.icons8.com/?size=100&id=FVQ3xoP9VcTG&format=png&color=000000" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
                     CAFETERIA UCSC
                 </a>
-                <!-- Botón menú colapsable en pantallas pequeñas -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="https://img.icons8.com/?size=100&id=59832&format=png&color=FFFFFF" width="20px">
                 </button>
-                <!-- Links de navegación -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -41,11 +38,11 @@
                             <a class="nav-link active m-2" aria-current="page" href="/html/comidas/bebidas.html" id="nav-item-e">BEBESTIBLES</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="btn-iniciarss">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="#" id="btnInicio" class="nav-link active btnLogin-pop" data-bs-toggle="modal" data-bs-target="#modalForm">Iniciar Sesión</a>
+                            <a href="#" id="btnInicio" class="nav-link active btnLogin-pop" data-bs-toggle="modal" data-bs-target="#modalForm">Iniciar Sesión</a>                           
                         </li>
-                    </ul>       
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -57,89 +54,49 @@
             <span class="carrito-texto">Ver carrito</span>
         </a>
     </div>
+
     <!-- Modal -->
-        <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalFormLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalFormLabel">Bienvenid@</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Formulario de Iniciar Sesión -->
-                        <div id="form-inicio-sesion" class="form-box inicio">
-                            <form class="form">
-                                <h2 class="form-title">Inicia Sesión</h2>
-                                <div class="input-container">
-                                    <span class="icon">
-                                        <ion-icon name="mail-outline"></ion-icon>
-                                    </span>
-                                    <input type="email" required>
-                                    <label>Email</label>
-                                </div>
-                                <div class="input-container">
-                                    <span class="icon">
-                                        <ion-icon name="lock-closed-outline"></ion-icon>
-                                    </span>
-                                    <input type="password" required>
-                                    <label>Contraseña</label>
-                                </div>
-                                <div class="recordar-pass">
-                                    <label><input type="checkbox"> Recordar contraseña</label>
-                                    <a href="#">Olvido contraseña?</a>
-                                </div>
-                                <button type="submit" class="btnIniciar">Iniciar Sesión</button>
-                                <div class="iniciar-registrarse">
-                                    <p>No tienes cuenta? <a href="#" id="link-registrarse" class="registrarse-link"> Registrate</a></p>
-                                </div>
-                            </form>
-                        </div>
-                        
-                        <!-- Formulario de Registrarse -->
-                        <div id="form-registrarse" class="form-box registrarse" style="display: none;">
-                            <form class="form">
-                                <h2 class="form-title">Registrarse</h2>
-                                <div class="input-container">
-                                    <span class="icon">
-                                        <ion-icon name="person-outline"></ion-icon>
-                                    </span>
-                                    <input type="text" required>
-                                    <label>Nombre y Apellido</label>
-                                </div>
-                                <div class="input-container">
-                                    <span class="icon">
-                                        <ion-icon name="id-card-outline"></ion-icon>
-                                    </span>
-                                    <input type="number" required>
-                                    <label>Rut</label>
-                                </div>
-                                <div class="input-container">
-                                    <span class="icon">
-                                        <ion-icon name="mail-outline"></ion-icon>
-                                    </span>
-                                    <input type="email" required>
-                                    <label>Email</label>
-                                </div>
-                                <div class="input-container">
-                                    <span class="icon">
-                                        <ion-icon name="lock-closed-outline"></ion-icon>
-                                    </span>
-                                    <input type="password" required>
-                                    <label>Contraseña</label>
-                                </div>
-                                <div class="recordar-pass">
-                                    <label><input type="checkbox"> Marca si es docente o Autoridad de la institucion</label>
-                                </div>
-                                <button type="submit" class="btnIniciar">Registrarse</button>
-                                <div class="iniciar-registrarse">
-                                    <p>Ya tienes cuenta? <a href="#" id="link-iniciar-sesion" class="iniciar-link"> Iniciar Sesión</a></p>
-                                </div>
-                            </form>
-                        </div>
+    <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalFormLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalFormLabel">Bienvenid@</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Formulario de Iniciar Sesión -->
+                    <div id="form-inicio-sesion" class="form-box inicio">
+                        <form class="form" onsubmit="return loginUser()">
+                            <h2 class="form-title">Inicia Sesión</h2>
+                            <div class="input-container">
+                                <span class="icon">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                </span>
+                                <input type="text" id="username" required>
+                                <label>Usuario</label>
+                            </div>
+                            <div class="input-container">
+                                <span class="icon">
+                                    <ion-icon name="lock-closed-outline"></ion-icon>
+                                </span>
+                                <input type="password" id="password" required>
+                                <label>Contraseña</label>
+                            </div>
+                            <div class="recordar-pass">
+                                <label><input type="checkbox"> Recordar contraseña</label>
+                                <a href="#">Olvido contraseña?</a>
+                            </div>
+                            <button type="submit" class="btnIniciar">Iniciar Sesión</button>
+                            <div class="iniciar-registrarse">
+                                <p>No tienes cuenta? <a href="#" id="link-registrarse" class="registrarse-link"> Registrate</a></p>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    
     <!--contenido-->
     <div class="container my-4 contents">
 
