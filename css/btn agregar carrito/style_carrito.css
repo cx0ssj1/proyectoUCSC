@@ -1,5 +1,5 @@
 table.table thead th {
-    background-color: rgb(255, 71, 71);
+    background-color: #1C5199;
     color: white;
 }
 
@@ -8,7 +8,7 @@ table.table tbody td {
 }
 
 table.table {
-    border-color: rgb(255, 71, 71);
+    border-color: #1C5199;
 }
 .quantity-container {
     display: flex;
@@ -19,7 +19,7 @@ table.table {
 .quantity-btn {
     width: 30px;
     height: 30px;
-    background-color: rgb(225, 71, 71);
+    background-color: #1C5199;
     color: white;
     border: none;
     cursor: pointer;
@@ -40,12 +40,12 @@ input[id^="quantity-input-"] {
 }
 
 .form-control{
-    border: 2px solid rgb(225, 71, 71);
+    border: 2px solid #1C5199;
 }
 
 .pagar-href{
-    background-color: rgb(225, 71, 71);
-    border: 2px solid rgb(225, 71, 71);
+    background-color: #1C5199;
+    border: 2px solid #1C5199;
     color: white;
     text-decoration: none;
     border-radius: 16px;
